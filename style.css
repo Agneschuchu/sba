@@ -1,7 +1,7 @@
 html {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(35, 25, 66);
+  background-color: rgb(3, 35, 50);
   margin: 0px -10px;
 }
 
@@ -10,7 +10,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(35, 25, 66);
+  background-color: rgb(3, 35, 50);
   padding: 0 10%;
   height: 4rem;
   position: fixed;
@@ -21,7 +21,7 @@ html {
 
 .header li {
   display: inline;
-  color:rgb(190, 149, 196);
+  color:rgb(0,69,149);
   font-weight: bold;
   padding-right: 2rem;
 }
@@ -31,33 +31,34 @@ html {
  }
  
  .header a li:hover {
-  color: rgb(141,233,235);
+  color: rgb(255,255,204);
  }
  
  .header .logo {
   flex-grow: 1;
-  color: rgb(159, 134, 192);
+  color: rgb(255,255,204);
   font-family: "Shrikhand";
   font-size: 1.2rem;
 }
 
 .header .logo a {
-color: rgb(159, 134, 192);
+color: rgb(255, 255, 255);
 }
 
 .header .logo a:hover {
-color: rgb(141,233,235);
+color: rgb(255,235,0);
 }
 
 .header ul {
 margin-right: 150px;
 }
 
-/* Banner */
+/* Banner 
 .banner{
-    background: url("../LoveBTS/img/banner.jpg");
+    background: url("./img/Banner.jpg");
     background-size: cover;
-    height:450px;
+    height: 300px;
+    padding-top: 1000px;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -67,30 +68,65 @@ margin-right: 150px;
 }
 
 .banner h1 {
-   /*background-color: rgb(159, 134, 192);*/
-    width: 100px;
+   background-color: rgb(159, 134, 192);
+    width: 215px;
     text-align: center;
-    color: rgb(159, 134, 192);
-    margin-top: 200px;
+    color: rgb(255, 235, 0);
+    margin-top: -50px;
     margin-left: 25px;
-    border-top: 6px solid rgb(159, 134, 192);
-    border-bottom: 6px solid rgb(159, 134, 192);
+    border-top: 5px solid rgb(255, 235, 0);
+    border-bottom: 5px solid rgb(255, 235, 0);
 }
 
 .banner h2 {
-    background-color: rgb(159, 134, 192);
-    width: 200px;
+    background-color: rgb(0, 69, 149);
+    width: 450px;
     text-align: center;
     color: white;
     margin-top: 0px;
     margin-left: 25px;
-}
+} */
+
+/* Photo Slideshow */
+.slideshow-container {
+  position: relative;
+  padding-top: 20px;
+  }
+  
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+  
+  .next {
+  right: 0;
+  }
+  
+  .fade {
+  animation-name: fade;
+  animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+  }
+  
 
 /*MV*/
 .MV{
     text-align: center;
     margin-top: 150px;
-    color: rgb(224, 177, 203);
+    color: rgb(255, 235, 0);
     font-family: "Shrikhand";
     letter-spacing: 0.1rem;
 }
@@ -100,7 +136,7 @@ margin-right: 150px;
     flex-direction: row;
     align-items: flex-start;
     justify-content: left;
-    background-color: rgb(6, 4, 11);
+    background-color: rgb(3, 35, 50);
     height: 450px;
   }
    .video-info {
@@ -110,7 +146,7 @@ margin-right: 150px;
     width: 300px;
   }
    .video-info h2 {
-    color: rgb(159, 134, 192);
+    color: rgb(255, 235, 0);
     width: 300px;
   }
    .video-info p {
@@ -139,16 +175,16 @@ margin-right: 150px;
     width: 178px;
     height: 100px;
     margin: 22px;
-    border: 3px solid rgb(224, 177, 203);
+    border: 3px solid rgb(255, 235, 0);
     cursor: pointer;
   }
    .video-thumbnails img:hover {
-    border: 3px solid rgb(159, 134, 192);
+    border: 3px solid rgb(255, 235, 0);
     filter: brightness(1.5);
   }
 
   .video-thumbnails img:hover {
-    border: 3px solid rgb(159, 134, 192);
+    border: 3px solid rgb(255, 235, 0);
     filter: brightness(1.5);
   }
  
@@ -156,13 +192,19 @@ margin-right: 150px;
 .about {
   text-align: center;
   margin-top: 100px;
-  color: rgb(224, 177, 203);
+  color: rgb(255, 235, 0);
   font-family: "Shrikhand";
   letter-spacing: 0.15rem;
  }
  
  .aboutCards {
   text-align: center;
+  display: inline-flex;
+ }
+
+ .aboutCards img {
+  width: 45%;
+  border: 3px solid rgb(244, 232, 100);
  }
  
  .aboutCards .col {
@@ -187,7 +229,7 @@ margin-right: 150px;
  }
  
  .aboutCards a {
-  background-color: rgb(159, 134, 192);
+  background-color: rgb(85, 98, 105);
   color: whitesmoke;
   font-size: 14px;
   font-weight: 600;
@@ -201,7 +243,7 @@ margin-right: 150px;
  }
  
  .aboutCards a:hover {
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(circle, rgba(255,235,0) 0%, rgba(0,69,149) 100%);
  }
  
 /* Contact */
@@ -209,7 +251,7 @@ margin-right: 150px;
   text-align: center;
   margin-top: 150px;
   margin-bottom: 40px;
-  color: rgb(224, 177, 203);
+  color: rgb(255, 235, 0);
   font-family: "Shrikhand";
   letter-spacing: 0.15rem;
  }
@@ -217,7 +259,7 @@ margin-right: 150px;
  .contact-container {
   display: flex;
   align-items: flex-start;
-  background-color: rgb(28, 17, 35);
+  background-color: rgb(21, 45, 56);
   padding-top: 20px;
  }
  
@@ -226,17 +268,17 @@ margin-right: 150px;
  }
  
  .image-container img {
-  width: 275px;
+  width: 200px;
  }
  
  /* Form */
  .form-container {
   flex: 1;
-  width: 300px;
+  width: 200px;
   display: flex;
   justify-content: center;
-  margin-left: 70px;
-  color:rgb(159, 134, 192); 
+  margin-left: 0px;
+  color:rgb(255, 235, 0); 
  }
  
  form {
@@ -245,7 +287,7 @@ margin-right: 150px;
  }
  
  form h2 {
-  color: rgb(224, 177, 203);
+  color: rgb(255, 235, 0);
   font-style: italic;
  }
  
@@ -259,7 +301,7 @@ margin-right: 150px;
   margin-top: 5px;
   border: 2px solid rgb(35, 25, 66);
   border-radius: 8px;
-  background-color: rgb(224, 177, 203);
+  background-color: rgb(113, 113, 142);
   color: rgb(35, 25, 66);
  }
  
@@ -331,7 +373,7 @@ margin-right: 150px;
   filter: hue-rotate(3.142rad);
  }
  
- .map-container iframe {
+.map-container iframe {
  }
  
 /* Footer */
